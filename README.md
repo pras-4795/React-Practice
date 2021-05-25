@@ -13,10 +13,10 @@ Before declaration of a class/function/…:
 Standalone export:
     `export {x [as y], ...}.`<br>
 Re-export:
-
-```export {x [as y], ...} from "module"
-    export * from "module" (doesn’t re-export default).
-    export {default [as y]} from "module" (re-export default)
+```
+export {x [as y], ...} from "module"
+export * from "module" (doesn’t re-export default)
+export {default [as y]} from "module" (re-export default)
 ```
 <br>
 Importing named exports:
@@ -27,17 +27,22 @@ Importing the default export:
 Import all:
     `import * as obj from "module"`<br>
 Import the module (its code runs), but do not assign any of its exports to variables:
-    `import "module"`<br><br>
+    `import "module"`
 
 ## Spread, Rest Operator
 '...'
 Spread operator is used to split up array elements or object properties
-    ```const newArray = [...oldArray, 1, 2]
-    const newObject = {...old object, newprop:2}```<br>
+ ```
+ const newArray = [...oldArray, 1, 2]
+ const newObject = {...old object, newprop:2}
+ ```
+ <br>
 Rest operatoris used to merge list of function args into array
-    ```function sortArgs(...args) {
-        return args.sort();
-    }```<br>
-
-Do not copy arrays or objects directly. `Ex: const secondPerson = firstPerson`
+```
+function sortArgs(...args) {
+    return args.sort();
+}
+```
+<br>
+Do not copy arrays or objects directly. `Ex: const secondPerson = firstPerson` <br>
 Instead, use spread operator `const secondPerson = {...person}`, this will create a deep clone.
