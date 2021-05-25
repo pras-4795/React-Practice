@@ -1,20 +1,17 @@
 # React-Practice
 
-Traditionally request was sent to a server and a new HTML page was sent back as a response.
-Javascript in the browser is able to manipulate DOM.
-React is a client side javascript library.
-It builds a modern, reactive user interfaces for the web.
-Declarative, Component Focused approach.
+## Why React?
+1. Traditionally request was sent to a server and a new HTML page was sent back as a response.
+2. Javascript in the browser is able to manipulate DOM.
+3. React is a client side javascript library.
+4. It builds a modern, reactive user interfaces for the web.
+5. Declarative, Component Focused approach.
 
-# Import, Exports 
-Here are all types of export that we covered in this and previous articles.
-
-You can check yourself by reading them and recalling what they mean:
-
+## Import, Exports 
 Before declaration of a class/function/…:
-    export [default] class/function/variable ...
+    `export [default] class/function/variable ...`
 Standalone export:
-    export {x [as y], ...}.
+    `export {x [as y], ...}.`
 Re-export:
     export {x [as y], ...} from "module"
     export * from "module" (doesn’t re-export default).
