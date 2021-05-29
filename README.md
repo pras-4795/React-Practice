@@ -32,11 +32,11 @@ Import the module (its code runs), but do not assign any of its exports to varia
 ## Spread, Rest Operator
 '...'
 Spread operator is used to split up array elements or object properties
+```
+const newArray = [...oldArray, 1, 2]
+const newObject = {...old object, newprop:2}
  ```
- const newArray = [...oldArray, 1, 2]
- const newObject = {...old object, newprop:2}
- ```
- <br>
+<br>
 Rest operatoris used to merge list of function args into array
 ```
 function sortArgs(...args) {
@@ -46,3 +46,5 @@ function sortArgs(...args) {
 <br>
 Do not copy arrays or objects directly. `Ex: const secondPerson = firstPerson` <br>
 Instead, use spread operator `const secondPerson = {...person}`, this will create a deep clone.
+
+
