@@ -10,4 +10,7 @@
 ``<br>
 
 A Component in React is just a javascript function.<br>
-Always use element names ac Capital case for custom elements, react assumes lower case elemnts are default ones.
+Always use element names ac Capital case for custom elements, react assumes lower case elemnts are default ones.<br>
+
+props is used to pass the parameter to a component, we have something called props.children prop to send the content within the tags.<br>
+The later part is also called composition. We can also generate wrappers like Card.js using composition.
